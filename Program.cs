@@ -24,18 +24,18 @@ int Result = 0;
 
 void SRCPosition(int[,] Matrix, int m, int n)
 {
-    int Z = 0;
+    bool flag;
     for (int i = 0; i < x; i++)
     {
         for (int j = 0; j < y; j++)
         {
             Matrix[i, j] = new Random().Next(0, 10);
-            if (i == m && j == n) { Result = Matrix[i, j]; Z++; }
+            if (i == m && j == n) { Result = Matrix[i, j]; flag = true; }
             Console.Write($"{Matrix[i, j]} ");
         }
         Console.WriteLine();
     }
-    if (Z > 0)
+    if (flag = true)
     {
         Console.WriteLine(Result);
     }
